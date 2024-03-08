@@ -1,0 +1,3 @@
+category,subcategory,language_id,question_type,question,option 1 ,option 2,option 3,option 4,option 5,answer,level,note
+63,97,2,{2 if question_type is true false other wise 1},My question goes here?,option 1,option 2,option 3,option 4,{optional - leave this blank cell if not using option e},a,1,any note
+63,97,1,{2 if question_type is true/false other wise 1},My second question here?,true,false,{leave this blank cell if question_type is true/false},{leave this blank cell if question_type is true/false},{leave this blank cell if question_type is true/false},a,2,any note
