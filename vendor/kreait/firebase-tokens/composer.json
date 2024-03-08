@@ -1,0 +1,60 @@
+{
+    "name": "kreait/firebase-tokens",
+    "description": "A library to work with Firebase tokens",
+    "type": "library",
+    "keywords": ["firebase", "google", "token", "authentication", "auth"],
+    "homepage": "https://github.com/kreait/firebase-token-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jérôme Gamez",
+            "homepage": "https://github.com/jeromegamez"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "fig/http-message-util": "^1.1.5",
+        "guzzlehttp/guzzle": "^7.0",
+        "beste/clock": "^1.0",
+        "lcobucci/jwt": "^4.1.5",
+        "psr/cache": "^1.0|^2.0|^3.0"
+    },
+    "suggest": {
+        "psr/cache-implementation": "to cache fetched remote public keys"
+    },
+    "require-dev": {
+        "firebase/php-jwt": "^5.5",
+        "friendsofphp/php-cs-fixer": "^3.4",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^1.2",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpunit/phpunit": "^9.5.10",
+        "rector/rector": "^0.12.9",
+        "symfony/cache": "^5.4|^6.0",
+        "symfony/var-dumper": "^5.3|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kreait\\Firebase\\JWT\\":"src/JWT"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kreait\\Firebase\\JWT\\Tests\\": "tests/JWT"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/jeromegamez"
+        }
+    ]
+}

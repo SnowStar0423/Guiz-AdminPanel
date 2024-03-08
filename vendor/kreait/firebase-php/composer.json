@@ -1,0 +1,82 @@
+{
+    "name": "kreait/firebase-php",
+    "description": "Firebase Admin SDK",
+    "keywords": ["firebase", "google", "sdk", "api", "database"],
+    "homepage": "https://github.com/kreait/firebase-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jérôme Gamez",
+            "homepage": "https://github.com/jeromegamez"
+        }
+    ],
+    "support": {
+        "docs": "https://firebase-php.readthedocs.io",
+        "issues": "https://github.com/kreait/firebase-php/issues",
+        "source": "https://github.com/kreait/firebase-php",
+        "chat": "https://discord.gg/Yacm7unBsr"
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-ctype": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "beste/clock": "^1.0",
+        "google/auth": "^1.18",
+        "google/cloud-core": "^1.42.2",
+        "google/cloud-storage": "^1.24.1",
+        "guzzlehttp/guzzle": "^7.4",
+        "kreait/firebase-tokens": "^2.2.0",
+        "lcobucci/jwt": "^4.1",
+        "mtdowling/jmespath.php": "^2.6.1",
+        "psr/cache": "^1.0.1|^2.0|^3.0",
+        "psr/http-message": "^1.0.1",
+        "psr/log": "^1.1|^2.0|^3.0",
+        "riverline/multipart-parser": "^2.0.8",
+        "symfony/polyfill-php80": "^1.23",
+        "symfony/polyfill-php81": "^1.23"
+    },
+    "require-dev": {
+        "google/cloud-firestore": "^1.19.3",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^1.4",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpunit/phpunit": "^9.5.10",
+        "rector/rector": "^0.12.5",
+        "symfony/var-dumper": "^5.4|^6.0",
+        "symplify/easy-coding-standard": "^10.0"
+    },
+    "suggest": {
+        "google/cloud-firestore": "^1.0 to use the Firestore component"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kreait\\Firebase\\": "src/Firebase"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kreait\\Firebase\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-6.x": "6.x-dev",
+            "dev-5.x": "5.x-dev",
+            "dev-4.x": "4.x-dev"
+        }
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/jeromegamez"
+        }
+    ]
+}
